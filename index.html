@@ -173,7 +173,7 @@ Alivio Urinario (8 tabletas)</textarea>
             
             reader.onload = (e) => {
                 // Si pesa menos de 120 KB, se devuelve intacta
-                if (sizeKB <= 120) return resolve(e.target.result);
+                if (sizeKB <= 180) return resolve(e.target.result);
                 
                 // Compresión iterativa para asegurar peso entre 5 y 85 KB
                 const img = new Image();
@@ -183,7 +183,7 @@ Alivio Urinario (8 tabletas)</textarea>
                     
                     let width = img.width; 
                     let height = img.height;
-                    const targetKB = 85; 
+                    const targetKB = 130; 
                     let quality = 0.9;
                     let compressedDataUrl = "";
                     
